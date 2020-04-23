@@ -17,6 +17,14 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  let result = "";
+  //loop over array of strings
+  for (let i = 1; i < n + 1; i++) {
+    // add to new string capilalized word
+    result += "\n" + "#".repeat(i) + " ".repeat(n - i);
+  }
+  return result;
+}
 
 module.exports = steps;
