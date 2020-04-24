@@ -14,6 +14,15 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  let maxCol = Math.floor((n + n - 1) / 2);
+
+  for (let i = 0; i < n; i++) {
+    // add to new string capilalized word
+    console.log(
+      " ".repeat(maxCol - i) + "#".repeat(i + 1) + " ".repeat(maxCol - i)
+    );
+  }
+}
 
 module.exports = pyramid;
